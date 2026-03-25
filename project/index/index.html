@@ -182,8 +182,6 @@
       padding: 60px 20px;
     }
     .ceo-box {
-      display: flex;
-      align-items: center;
       background: var(--card-bg);
       padding: 40px;
       border-radius: 15px;
@@ -192,18 +190,11 @@
       margin: 0 auto;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       transform-style: preserve-3d;
+      text-align: center;
     }
     .ceo-box:hover {
       transform: translateY(-5px) rotateY(2deg);
       box-shadow: 0 8px 16px var(--shadow);
-    }
-    .ceo-box img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid var(--accent-color);
-      margin-right: 40px;
     }
     .ceo-info h3 {
       color: var(--text-color);
@@ -211,6 +202,20 @@
     }
     .ceo-info p {
       margin-bottom: 10px;
+    }
+    .ceo-avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .ceo-avatar img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-color);
+      box-shadow: 0 4px 12px var(--shadow);
     }
     .contact-info {
       text-align: center;
@@ -313,8 +318,6 @@
         padding: 20px;
       }
       .ceo-box {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
       }
       .ceo-box img {
@@ -367,10 +370,6 @@
       }
       .ceo-box {
         padding: 15px;
-      }
-      .ceo-box img {
-        width: 120px;
-        height: 120px;
       }
       .ceo-info h3 {
         font-size: 1.3em;
@@ -457,7 +456,9 @@
   <section id="ceo" class="ceo-section">
     <h2>Leadership</h2>
     <div class="ceo-box">
-      <img src="C:\Users\omong\Downloads\Young CEO in professional portrait.png" alt="Omongo Ivan Raymond - Manager & CEO">
+      <div class="ceo-avatar">
+        <img src="../images/ceo.png.png" alt="Alex Morgan, CEO of SolarGrid Power">
+      </div>
       <div class="executive-bio">
         <h2>Omongo Ivan Raymond</h2>
         <h4>Manager & Chief Executive Officer, SolarGrid Power</h4>
